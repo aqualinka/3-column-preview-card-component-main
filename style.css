@@ -1,8 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
+:root{
+    --orange-color:hsl(31, 77%, 52%);
+    --darkcyan-color:hsl(184, 100%, 22%);
+    --verydarkcyan-color:hsl(179, 100%, 13%);
+    --lightgray-color:hsl(0, 0%, 95%);
+    --primary-font: 'Big Shoulders Display', cursive;
+    --secondary-font: 'Lexend Deca', sans-serif;
 }
-/*font-family: 'Big Shoulders Display', cursive;
+
+body{
+
+   background-color:var(--lightgray-color);
+}
+.container-custom{
+  max-width: 900px;
+  
+  
+}
+.sedans-container{
+    background-color: var(--orange-color);
+}
+.suvs-container{
+    background-color:var(--darkcyan-color) ;
+}
+.luxury-container{
+    background-color: var(--verydarkcyan-color);
+}
+.title-custom{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    color: var(--lightgray-color);
+}
+
+.text{
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+.button-custom{
+    font-family: var(--secondary-font);
+    cursor: pointer;
+    background-color: var(--lightgray-color);
+}
+.btn-sedan{
+    color:  var(--orange-color);
+}
+.btn-suv{
+    color: var(--darkcyan-color);
+}
+.btn-luxury{
+    color: var(--verydarkcyan-color);
+}
+
+/*
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+font-family: 'Big Shoulders Display', cursive;
 font-family: 'Lexend Deca', sans-serif;*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
