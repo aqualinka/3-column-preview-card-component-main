@@ -5,43 +5,56 @@
     --lightgray-color:hsl(0, 0%, 95%);
     --primary-font: 'Big Shoulders Display', cursive;
     --secondary-font: 'Lexend Deca', sans-serif;
+    /*Very light gray (background, headings, buttons)
+    Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)*/
 }
 
 body{
-
+    font-size: 14px;
    background-color:var(--lightgray-color);
+  
 }
-.container-custom{
-  max-width: 900px;
-  
-  
+
+.row-custom > div:first-of-type{
+   border-radius:8px 8px  0 0;
+}
+
+.row-custom > div:last-of-type{
+border-radius: 0 0 8px 8px;
+}
+.row-custom > div{
+
 }
 .sedans-container{
     background-color: var(--orange-color);
+   
 }
 .suvs-container{
     background-color:var(--darkcyan-color) ;
+    
 }
 .luxury-container{
     background-color: var(--verydarkcyan-color);
+    
 }
 .title-custom{
-    font-size: 2em;
-    text-transform: uppercase;
     font-family: var(--primary-font);
     color: var(--lightgray-color);
 }
 
 .text{
-    font-size: 14px;
+    word-spacing: 2px;
+    line-height: 1.5;
     font-family: var(--secondary-font);
     color:  hsla(0, 0%, 100%, 0.75);
 }
 .button-custom{
+    padding: 10px 20px !important;
     font-family: var(--secondary-font);
     cursor: pointer;
     background-color: var(--lightgray-color);
 }
+
 .btn-sedan{
     color:  var(--orange-color);
 }
@@ -51,14 +64,26 @@ body{
 .btn-luxury{
     color: var(--verydarkcyan-color);
 }
-
-/*
-Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
-Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
-font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif;*/
-
-
-
+.attribution{
+    font-size: 10px;
+}
+@media  (min-width: 768px){
+    .container-wrapper{
+        height: 100vh;
+        max-width: 800px;
+    }
+    .row-custom > div:first-of-type{
+        border-radius:  8px 0  0 8px;
+     }
+     
+     .row-custom > div:last-of-type{
+     border-radius: 0 8px 8px 0;
+     }
+     .button-custom{
+        margin-top: 50px;
+     }
+    
+}
+    
 
 
