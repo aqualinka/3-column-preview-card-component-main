@@ -22,9 +22,7 @@ body{
 .row-custom > div:last-of-type{
 border-radius: 0 0 8px 8px;
 }
-.row-custom > div{
 
-}
 .sedans-container{
     background-color: var(--orange-color);
    
@@ -44,7 +42,6 @@ border-radius: 0 0 8px 8px;
 
 .text{
     word-spacing: 2px;
-    line-height: 1.5;
     font-family: var(--secondary-font);
     color:  hsla(0, 0%, 100%, 0.75);
 }
@@ -70,7 +67,7 @@ border-radius: 0 0 8px 8px;
 @media  (min-width: 768px){
     .container-wrapper{
         height: 100vh;
-        max-width: 800px;
+        max-width:950px;
     }
     .row-custom > div:first-of-type{
         border-radius:  8px 0  0 8px;
